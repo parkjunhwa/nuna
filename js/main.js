@@ -80,10 +80,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // 현재 연도 표시 기능
 document.getElementById('current-year').textContent = new Date().getFullYear();
 
+// 카카오 SDK 초기화
+Kakao.init('04bab7e723e1c9796923297659a59518');
+
 // 소셜 공유 기능
 // - 카카오톡 공유
 // - 페이스북 공유
 function shareKakao() {
+    if (!Kakao.isInitialized()) {
+        console.error('Kakao SDK가 초기화되지 않았습니다.');
+        return;
+    }
+
     Kakao.Link.sendDefault({
         objectType: 'feed',
         content: {
@@ -94,6 +102,11 @@ function shareKakao() {
                 mobileWebUrl: window.location.href,
                 webUrl: window.location.href,
             },
+        },
+        social: {
+            likeCount: 286,
+            commentCount: 45,
+            sharedCount: 845
         },
         buttons: [
             {
