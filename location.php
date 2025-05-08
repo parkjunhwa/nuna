@@ -46,7 +46,7 @@
             <div id="map" style="width:100%;height:400px;margin:2rem 0;border-radius:12px;"></div>
 
             <div class="rental-message">
-                <p>토, 일, 휴일은 통화가 어려울 수 있으니 상담전화는 평일에 주시면 좋습니다.</p>
+                <p>토, 일, 휴일은 통화가 어려울 수 있으니 상담전화는 평일에 주시면 좋아요^^</p>
             </div>
         </div>
     </div>

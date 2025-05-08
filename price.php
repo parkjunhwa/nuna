@@ -50,14 +50,6 @@
                 </ul>
             </div>
 
-            <div class="rental-notice">
-                <h2>안내사항</h2>
-                <ul class="notice-list">
-                    <li>출장 메이크업의 경우 추가 비용이 발생할 수 있습니다.</li>
-                    <li>단체 예약 시 할인 혜택이 있습니다.</li>
-                </ul>
-            </div>
-
             <div class="rental-message">
                 <p>고객님의 특별한 날을 위한 맞춤형 서비스, 브러쉬메이크업이 함께하겠습니다.</p>
             </div>

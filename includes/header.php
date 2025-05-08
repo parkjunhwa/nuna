@@ -43,7 +43,7 @@
             "longitude": "127.9397"
         },
         "url": "https://brushmakeup.com",
-        "telephone": "033-766-3187",
+        "telephone": "010-4365-3188",
         "priceRange": "₩₩",
         "openingHours": "Mo-Su 10:00-19:00",
         "sameAs": [

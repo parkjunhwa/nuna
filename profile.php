@@ -70,17 +70,17 @@
                 <div class="expertise-grid">
                     <div class="expertise-item">
                         <div class="expertise-icon">
-                            <img src="images/profile/icon-wedding.svg" alt="웨딩 메이크업" onerror="this.onerror=null;this.src='images/profile/icon-wedding.png';">
+                            <img src="images/profile/icon-wedding.svg" alt="돌,혼주,웨딩 메이크업" onerror="this.onerror=null;this.src='images/profile/icon-wedding.png';">
                         </div>
-                        <h3>웨딩 메이크업</h3>
-                        <p>신부님의 가장 아름다운 순간을 위한 맞춤형 메이크업</p>
+                        <h3>돌,혼주,웨딩</h3>
+                        <p>가장 아름다운 순간을 위한 맞춤형 메이크업</p>
                     </div>
                     <div class="expertise-item">
                         <div class="expertise-icon">
-                            <img src="images/profile/icon-party.svg" alt="파티 메이크업" onerror="this.onerror=null;this.src='images/profile/icon-party.png';">
+                            <img src="images/profile/icon-party.svg" alt="방송,면접 메이크업" onerror="this.onerror=null;this.src='images/profile/icon-party.png';">
                         </div>
-                        <h3>방송 메이크업</h3>
-                        <p>카메라에 최적화된 전문 방송 메이크업</p>
+                        <h3>방송,면접 메이크업</h3>
+                        <p>카메라, 면접에 최적화된 전문 메이크업</p>
                     </div>
                     <div class="expertise-item">
                         <div class="expertise-icon">

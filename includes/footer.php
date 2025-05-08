@@ -6,7 +6,7 @@
                 <p class="info-item">대표: 박진희</p>
                 <p class="info-item">주소: 원주시 구곡길34</p>
                 <p class="info-item">사업자등록번호: 224-14-63307</p>
-                <p class="info-item">전화번호: 033-766-3187</p>
+                <p class="info-item">전화번호: 010-4365-3188</p>
             </div>
             <div class="social-share">
                 <button onclick="shareFacebook()" class="share-button facebook">
