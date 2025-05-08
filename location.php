@@ -19,11 +19,12 @@
                     </li>
                     <li>
                         <span class="day">전화</span>
-                        <span class="description">033-766-3187</span>
+                        <span class="description">010-4365-3188</span>
                     </li>
                     <li>
                         <span class="day">영업시간</span>
-                        <span class="description">10:00 - 19:00 (월요일 휴무)</span>
+                        <span class="description">평일 : 10:00 - 18:00 (수요일 휴무)<br />
+                        법정공휴일,토,일 : 06:00~18:00</span>
                     </li>
                 </ul>
             </div>
@@ -37,60 +38,94 @@
             <div class="rental-notice">
                 <h2>찾아오시는 길</h2>
                 <ul class="notice-list">
-                    <li>원주역에서 도보 5분 거리</li>
-                    <li>원주시외버스터미널에서 도보 10분 거리</li>
-                    <li>주차 공간이 제한적이오니 가급적 대중교통 이용 부탁드립니다.</li>
-                    <li>주차가 필요한 경우 미리 말씀해 주시기 바랍니다.</li>
+                    <li>남원주 초교 맞은편 연화산(중국집) 골목라인.</li>
+                    <li>근처 추차 가능.</li>
                 </ul>
             </div>
 
             <div id="map" style="width:100%;height:400px;margin:2rem 0;border-radius:12px;"></div>
 
             <div class="rental-message">
-                <p>편안한 방문을 위해 미리 연락 주시면 더 자세한 안내를 도와드리겠습니다.</p>
+                <p>토, 일, 휴일은 통화가 어려울 수 있으니 상담전화는 평일에 주시면 좋습니다.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- 카카오맵 API -->
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=04bab7e723e1c9796923297659a59518"></script>
+<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=04bab7e723e1c9796923297659a59518&libraries=services"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    var container = document.getElementById('map');
-    var options = {
-        center: new kakao.maps.LatLng(37.3512, 127.9397), // 원주시 구곡길 34 좌표
-        level: 3
-    };
+function initMap() {
+    try {
+        console.log('지도 초기화 시작...');
+        
+        var mapContainer = document.getElementById('map');
+        if (!mapContainer) {
+            console.error('지도 컨테이너를 찾을 수 없습니다.');
+            return;
+        }
+        
+        var mapOption = {
+            center: new kakao.maps.LatLng(37.3512, 127.9397),
+            level: 3
+        };
 
-    var map = new kakao.maps.Map(container, options);
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+        console.log('지도 생성 성공');
 
-    // 마커 생성
-    var markerPosition = new kakao.maps.LatLng(37.3512, 127.9397);
-    var marker = new kakao.maps.Marker({
-        position: markerPosition
-    });
-    marker.setMap(map);
+        // 마커 생성
+        var marker = new kakao.maps.Marker({
+            position: new kakao.maps.LatLng(37.3512, 127.9397)
+        });
+        marker.setMap(map);
 
-    // 인포윈도우 생성
-    var iwContent = '<div style="padding:10px;font-size:14px;text-align:center;width:150px;">' +
-                   '<strong>브러쉬메이크업</strong><br>' +
-                   '<span style="font-size:12px;color:#666;margin-top:5px;display:block;">원주시 구곡길 34</span>' +
-                   '</div>';
-    var infowindow = new kakao.maps.InfoWindow({
-        content: iwContent,
-        removable: true
-    });
-    infowindow.open(map, marker);
+        // 인포윈도우 생성
+        var infowindow = new kakao.maps.InfoWindow({
+            content: '<div style="padding:10px;font-size:14px;text-align:center;width:150px;">' +
+                    '<strong>브러쉬메이크업</strong><br>' +
+                    '<span style="font-size:12px;color:#666;margin-top:5px;display:block;">원주시 구곡길 34</span>' +
+                    '</div>'
+        });
+        infowindow.open(map, marker);
 
-    // 지도 컨트롤러 추가
-    var zoomControl = new kakao.maps.ZoomControl();
-    map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+        // 주소-좌표 변환 객체 생성
+        var geocoder = new kakao.maps.services.Geocoder();
+        
+        // 주소로 좌표 검색
+        geocoder.addressSearch('강원도 원주시 구곡길 34', function(result, status) {
+            if (status === kakao.maps.services.Status.OK) {
+                var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+                
+                // 지도 중심 이동
+                map.setCenter(coords);
+                
+                // 마커 위치 이동
+                marker.setPosition(coords);
+                
+                // 인포윈도우 위치 이동
+                infowindow.open(map, marker);
+            }
+        });
 
-    // 지도 타입 컨트롤러 추가
-    var mapTypeControl = new kakao.maps.MapTypeControl();
-    map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-});
+    } catch (error) {
+        console.error('지도 초기화 중 오류 발생:', error);
+    }
+}
+
+// DOM이 완전히 로드된 후 지도 초기화
+document.addEventListener('DOMContentLoaded', initMap);
 </script>
+
+<style>
+#map {
+    width: 100%;
+    height: 400px;
+    margin: 2rem 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+</style>
 
 <?php include 'includes/footer.php'; ?> 

@@ -53,8 +53,6 @@
             <div class="rental-notice">
                 <h2>안내사항</h2>
                 <ul class="notice-list">
-                    <li>모든 금액은 부가세 포함가입니다.</li>
-                    <li>예약금은 총 금액의 30%입니다.</li>
                     <li>출장 메이크업의 경우 추가 비용이 발생할 수 있습니다.</li>
                     <li>단체 예약 시 할인 혜택이 있습니다.</li>
                 </ul>

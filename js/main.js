@@ -80,46 +80,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // 현재 연도 표시 기능
 document.getElementById('current-year').textContent = new Date().getFullYear();
 
-// 카카오 SDK 초기화
-Kakao.init('04bab7e723e1c9796923297659a59518');
-
 // 소셜 공유 기능
-// - 카카오톡 공유
 // - 페이스북 공유
-function shareKakao() {
-    if (!Kakao.isInitialized()) {
-        console.error('Kakao SDK가 초기화되지 않았습니다.');
-        return;
-    }
-
-    Kakao.Link.sendDefault({
-        objectType: 'feed',
-        content: {
-            title: '브러쉬메이크업',
-            description: '전문 메이크업 아티스트가 제공하는 고품격 메이크업 서비스',
-            imageUrl: window.location.origin + '/images/hero-bg.jpg',
-            link: {
-                mobileWebUrl: window.location.href,
-                webUrl: window.location.href,
-            },
-        },
-        social: {
-            likeCount: 286,
-            commentCount: 45,
-            sharedCount: 845
-        },
-        buttons: [
-            {
-                title: '웹사이트 방문하기',
-                link: {
-                    mobileWebUrl: window.location.href,
-                    webUrl: window.location.href,
-                },
-            },
-        ],
-    });
-}
-
 function shareFacebook() {
     const url = encodeURIComponent(window.location.href);
     window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, 'facebook-share', 'width=580,height=296');

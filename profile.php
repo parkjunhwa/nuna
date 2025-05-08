@@ -23,28 +23,12 @@
             <!-- 경력 사항 섹션 -->
             <div class="profile-section">
                 <h2>주요 경력</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="year">현재</div>
-                        <div class="content">
-                            <h3>브러쉬메이크업 대표</h3>
-                            <p>원주 웨딩 메이크업 전문</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="year">경력</div>
-                        <div class="content">
-                            <h3>(구)결만사, 웨딩그리다</h3>
-                            <p>메인실장</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="year">경력</div>
-                        <div class="content">
-                            <h3>promis</h3>
-                            <p>총괄 실장</p>
-                        </div>
-                    </div>
+                <div class="career-summary" style="white-space: pre-line; font-size: 1.1em; text-align: center;">
+                    <p>
+                        <strong>브러쉬메이크업 대표 (현재)</strong> - 원주 웨딩 메이크업 전문<br>
+                        <strong>(구)결만사, 웨딩그리다</strong> - 메인실장<br>
+                        <strong>promis</strong> - 총괄 실장
+                    </p>
                 </div>
             </div>
 
@@ -54,7 +38,7 @@
                 <div class="certification-grid">
                     <div class="certification-item">
                         <div class="icon">
-                            <img src="images/profile/icon-tv.svg" alt="방송 아이콘">
+                            <img src="images/profile/icon-tv.svg" alt="방송 아이콘" onerror="this.onerror=null;this.src='images/profile/icon-tv.png';">
                         </div>
                         <h3>TV 방송</h3>
                         <ul>
@@ -67,7 +51,7 @@
                     </div>
                     <div class="certification-item">
                         <div class="icon">
-                            <img src="images/profile/icon-mic.svg" alt="방송 아이콘">
+                            <img src="images/profile/icon-mic.svg" alt="방송 아이콘" onerror="this.onerror=null;this.src='images/profile/icon-mic.png';">
                         </div>
                         <h3>기타 방송</h3>
                         <ul>
@@ -86,21 +70,21 @@
                 <div class="expertise-grid">
                     <div class="expertise-item">
                         <div class="expertise-icon">
-                            <img src="images/profile/icon-wedding.svg" alt="웨딩 메이크업">
+                            <img src="images/profile/icon-wedding.svg" alt="웨딩 메이크업" onerror="this.onerror=null;this.src='images/profile/icon-wedding.png';">
                         </div>
                         <h3>웨딩 메이크업</h3>
                         <p>신부님의 가장 아름다운 순간을 위한 맞춤형 메이크업</p>
                     </div>
                     <div class="expertise-item">
                         <div class="expertise-icon">
-                            <img src="images/profile/icon-party.svg" alt="파티 메이크업">
+                            <img src="images/profile/icon-party.svg" alt="파티 메이크업" onerror="this.onerror=null;this.src='images/profile/icon-party.png';">
                         </div>
                         <h3>방송 메이크업</h3>
                         <p>카메라에 최적화된 전문 방송 메이크업</p>
                     </div>
                     <div class="expertise-item">
                         <div class="expertise-icon">
-                            <img src="images/profile/icon-hair.svg" alt="헤어 스타일링">
+                            <img src="images/profile/icon-hair.svg" alt="헤어 스타일링" onerror="this.onerror=null;this.src='images/profile/icon-hair.png';">
                         </div>
                         <h3>헤어 스타일링</h3>
                         <p>드레스와 한복에 어울리는 맞춤형 헤어 스타일링</p>

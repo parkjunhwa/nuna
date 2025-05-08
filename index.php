@@ -4,18 +4,19 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
         <h1><img src="/images/logoicon_w.png" alt="브러쉬 메이크업"></h1>
-        <p>당신의 아름다움을 위한 특별한 순간</p>
+        <p>소중한 순간을 더욱 특별하게 만드는~make up brush❤️</p>
         <div class="hero-keywords">
-            <span>#웨딩메이크업</span>
-            <span>#돌잔치메이크업</span>
-            <span>#드레스대여</span>
-            <span>#한복대여</span>
+            <span>#메이크업</span>
+            <span>#업스타일</span>
+            <span>#스타일링</span>
+            <span>#드레스</span>
+            <span>#한복</span>
         </div>
         <a href="/reservation.php" class="btn btn-primary">예약하기</a>
     </div>
 </section>
 
-<section class="services">
+<!-- <section class="services">
     <div class="container">
         <h2 class="section-title">Our Services</h2>
         <div class="services-grid">
@@ -27,7 +28,7 @@
                 </div>
                 <div class="service-content">
                     <h3>웨딩 메이크업</h3>
-                    <p>특별한 날을 위한 완벽한 메이크업으로 당신의 아름다움을 더욱 빛나게 해드립니다.</p>
+                    <p>완벽한 메이크업으로 당신의 아름다움을 더욱 빛나게 해드립니다.</p>
                 </div>
             </div>
             <div class="service-card">
@@ -38,7 +39,7 @@
                 </div>
                 <div class="service-content">
                     <h3>드레스 & 한복</h3>
-                    <p>고급스러운 드레스와 전통미 넘치는 한복으로 완벽한 스타일링을 완성해드립니다.</p>
+                    <p>완벽한 스타일링을 완성해드립니다.</p>
                 </div>
             </div>
             <div class="service-card">
@@ -49,14 +50,14 @@
                 </div>
                 <div class="service-content">
                     <h3>돌잔치 메이크업</h3>
-                    <p>소중한 순간을 더욱 특별하게 만들어드리는 맞춤형 메이크업 서비스를 제공합니다.</p>
+                    <p>맞춤형 메이크업 서비스를 제공합니다.</p>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-<section class="features">
+<!-- <section class="features">
     <div class="container">
         <h2 class="section-title">Why Choose Us</h2>
         <div class="features-grid">
@@ -75,7 +76,7 @@
                         <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM17 12H7V10H17V12ZM13 16H7V14H13V16ZM17 8H7V6H17V8Z" fill="currentColor"/>
                     </svg>
                 </div>
-                <h3>고급 화장품 사용</h3>
+                <h3>프리미엄 제품 사용</h3>
                 <p>국내외 유명 브랜드의 프리미엄 제품</p>
             </div>
             <div class="feature-item">
@@ -98,31 +99,31 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="gallery-preview">
     <div class="container">
         <h2 class="section-title">Portfolio</h2>
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="/images/makeup/mosavoDKSy.jpg" alt="웨딩 메이크업 포트폴리오">
+                <img src="/images/dress/Resized_20240310_172842_1746591133623.jpeg" alt="드레스 포트폴리오">
                 <div class="gallery-item-info">
-                    <h3>Wedding Make-up</h3>
-                    <p>자연스러운 웨딩 메이크업</p>
+                    <h3>Dress Styling</h3>
+                    <p>드레스 스타일링</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="/images/dress/mosaMVyT0J.jpg" alt="한복 메이크업 포트폴리오">
+                <img src="/images/dress/B6B8AA90-5A82-49FE-B07B-593AA5FA7F9B.jpeg" alt="한복 포트폴리오">
                 <div class="gallery-item-info">
                     <h3>Hanbok Styling</h3>
-                    <p>전통미 넘치는 한복 스타일링</p>
+                    <p> 한복 스타일링</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="/images/makeup/mosa6wW2EE.jpg" alt="돌잔치 메이크업 포트폴리오">
+                <img src="/images/makeup/9488DE7D-FAFF-4F9C-B3A9-4A1D48918C80.jpeg" alt="헤어 포트폴리오">
                 <div class="gallery-item-info">
                     <h3>Party Make-up</h3>
-                    <p>특별한 날을 위한 메이크업</p>
+                    <p>헤어, 메이크업</p>
                 </div>
             </div>
         </div>
@@ -135,8 +136,8 @@
 <section class="cta">
     <div class="container">
         <div class="cta-content">
-            <h2>Special Moment</h2>
-            <p>당신의 특별한 순간을 더욱 빛나게 해드리겠습니다.</p>
+            <h2>예약하기</h2>
+            <p>예약 방법과 절차를 확인해 주세요.</p>
             <a href="/reservation.php" class="btn btn-primary">예약하기</a>
         </div>
     </div>

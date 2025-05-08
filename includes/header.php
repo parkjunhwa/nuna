@@ -21,11 +21,6 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <!-- 카카오톡 공유하기 -->
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script>
-        Kakao.init('61c874de66870dbba9426fa65f3b5ba8');
-    </script>
     <!-- 구조화된 데이터 -->
     <script type="application/ld+json">
     {

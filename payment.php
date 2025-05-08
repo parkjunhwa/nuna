@@ -23,7 +23,7 @@
                     </li>
                     <li>
                         <span class="day">예금주</span>
-                        <span class="description">브러쉬메이크업</span>
+                        <span class="description">박진희</span>
                     </li>
                 </ul>
             </div>
@@ -34,7 +34,7 @@
                     <li>입금자명은 예약자 성함으로 부탁드립니다.</li>
                     <li>입금 후 반드시 문자로 입금 확인 부탁드립니다.</li>
                     <li>예약금은 총 최소 50000원 이며, 취소 시 환불이 불가능합니다.</li>
-                    <li>잔금은 서비스 이용 당일 현금으로 결제 가능합니다.</li>
+                    <li>의상 패키지 시 피팅날 잔랙 결제</li>
                 </ul>
             </div>
 
